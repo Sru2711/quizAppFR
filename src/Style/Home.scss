@@ -1,0 +1,89 @@
+$body-color:#efeded;
+$primary-color:#1a94f8;
+$secondary-color: #ffb300;
+$ternary-color: black;
+
+.home-body{
+    background-color:$body-color !important;
+    .headingRow{
+        padding-left: 200px;
+        padding-right:200px;
+        margin-top: 30px;
+
+        .headingdiv{
+          border: 2px solid $primary-color;
+        }
+        .quizsubjects-heading{
+            margin-top: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding-bottom: 5px;
+            font-family: "Bungee Inline", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color:$body-color;
+            background-color: $primary-color;
+    
+        }
+    }
+    
+    
+    .cardgroup{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        width: 100%;
+
+        .card-img{
+            border-radius:5%;
+            margin-top:-0vh;
+            max-width:200px;
+            height:50%''
+        }
+
+        .main-card{
+            margin: 10px; 
+            flex:30%;
+            height: 250px;
+            max-width: 450px;
+            min-width: 200px;
+            padding:1vh;
+            border-radius: 5%;
+            background-color:$body-color;
+            box-shadow: 8px 5px 2px 4px #ffb300e3;
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+            // outline: 1px solid #ffb300c5;
+            // outline-offset:-10px;
+
+             .cardbody{
+                display:flex;
+                flex-direction:column;
+                justify-content: space-between;
+
+                .card-title, .card-text{
+                    color:#ffb300e3
+                }
+             }
+            .card-button{
+                margin:2px;
+                background-color:#ffb300c5;
+                border-radius:5px;
+                size:100px;
+                border:none;
+                .button-link{
+                    text-decoration:none;
+                    color: #efeded;
+                }
+                
+                // border:2px solid rgba(0, 0, 0, 0.836); ;
+            }
+            .card-button:hover{
+                background-color:$primary-color;
+            }
+        }
+    }
+    
+}
